@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUICKLINK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <div class='container'>
+        <header>
+            <div class='logo-nav'>
+                <div class="logo">
+                    <img src='./images/icons/Icon-header.svg' class='logo-icon' alt='logo'>
+                    <a class='logo-text'>QUICKLINK</a>
+                </div>
+                <nav class='header-nav'>
+                    <ul>
+                        <li><a href="">Что это?</a></li>
+                        <li><a href="">Как это выглядит?</a></li>
+                        <li><a href="">Сколько стоит?</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="profile">
+                <img src='./images/icons/Icon-login.svg' alt='login'>
+            </div>
+        </header>
+        <main>
+            <section class='hero'>
+                    <div class='hero-text'>
+                        <h1>Все, что тебе нужно<br>В одной ссылке</h1>
+                        <p>Присоединяйся к более 50 млн. людей<br>и делись всем, что ты создаешь, курируешь<br>или продаешь онлайн. Все в одной ссылке.</p>
+                    </div>
+                    <img src='./images/pictures/Hero-picture.png' alt='illustration' class='hero-picture'>
+                    <form>
+                        <input type='email'  class='hero-action-input' id='email' placeholder='your@mail.com' required>
+                        <button type='submit' class='hero-action-button'>
+                            Создать страницу
+                            <img src='./images/icons/Icon-arrow.svg' class='hero-action-arrow' alt='button-icon'>
+                        </button>
+                        <label for='email'></label>
+                    </form>
+            </section>
+            <section class='features'>
+                <div class='features-card'>
+                    <img  src='./images/icons/Pics-features-1.svg' class='features-icon-1' alt='features-icon'>
+                    <h1>Кастомные элементы</h1>
+                    <p>Создавай и кастомизируй свой профиль за считанные минуты!</p>
+                </div>
+                <div class='features-card'>
+                    <img  src='./images/icons/Pics-features-2.svg' class='features-icon-2' alt='features-icon'>
+                    <h1>Подробная аналитика</h1>
+                    <p>Отслеживай информацию о том, кто и откуда интересовался твоим профилем</p>
+                </div>
+                <div class='features-card'>
+                    <img  src='./images/icons/Pics-features-3.svg' class='features-icon-3' alt='features-icon'>
+                    <h1>Короткая ссылка</h1>
+                    <p>Красивая персональная ссылка на профиль бесплатно!</p>
+                </div>
+            </section>
+            <section class='screens'>
+                <img src='./images/pictures/Screens-picture.png'  alt='illustration' class='screens-picture'>
+                <div class='screens-text-action'>
+                    <p class='screens-text'>Большое количество кастомизируемых элементов поможет лучше рассказать миру о себе и привлечь новых клиентов</p>
+                    <button class='screens-action' type='button'>
+                        Попробовать бесплатно
+                    </button>
+                </div>
+            </section>
+            <section class='price'>
+                <h1 class='price-heading'>тарифы</h1>
+                <div class='prices-cards'>
+                    <div class='base-price price-card'>
+                        <div class='text-price-base text-price'>
+                            <h1>базовый</h1>
+                            <h2><span class='price-int'>0₽</span> /мес</h2>
+                            <ul class='options-price-base options-price'>
+                                <li><span class='price-check-icon'></span>Нет платы за использование</li>
+                                <li><span class='price-check-icon'></span>Бесплатный домен</li>
+                                <li><span class='price-check-icon'></span>Несколько тем оформления на выбор</li>
+                            </ul>
+                        </div>
+                        <button class='price-button'  type='button'>
+                            Попробовать
+                        </button>
+                    </div>
+                    <div class='premium-price price-card'>
+                        <div class='text-price-premium text-price'>
+                            <h1>премиум</h1>
+                            <h2><span class='price-int'>250₽</span> /мес</h2>
+                            <ul class='options-price-premium options-price'>
+                                <li><span class='price-check-icon'></span>Более 100 кастомных элементов</li>
+                                <li><span class='price-check-icon'></span>Доступ к аналитике</li>
+                                <li><span class='price-check-icon'></span>Скидки на продвижение</li>
+                                <li><span class='price-check-icon'></span>Бесплатное хранилище фото</li>
+                            </ul>
+                        </div>
+                        <button class='price-button' type='button'>
+                            Получить премиум
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class='faq'>
+                <div class='faq-container'>
+                    <input type='checkbox' id='faq-block' hidden>
+                    <label for='faq-block' class='question'>Зачем мне нужен Quicklink?</label>
+                    <div class='answer'>
+                        <p>Это единая ссылка, которую вы можете использовать, чтобы связать вашу аудиторию
+                            со всем, что вы делаете, и со всем, что вам небезразлично. Это позволяет делиться
+                            множеством ссылок в одной, чтобы ваши подписчики, посетители и клиенты могли
+                            найти все, что они ищут, в одном месте. Вы можете добавить ссылку на Quicklink
+                            на платформах социальных сетей, таких как Tiktok и Instagram, включить
+                            в подписи к электронной почте и даже отобразить в виде QR-кода, чтобы ваша
+                            офлайн-аудитория связалась с вами онлайн.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class='footer-logo'>
+
+            </div>
+            <div class='footer-socials'>
+
+            </div>
+            <nav class='footer-nav'>
+                <ul>
+                    <li><a href=''>Что это?</a></li>
+                    <li><a href=''>Как это работает?</a></li>
+                    <li><a href=''>Сколько стоит?</a></li>
+                    <li><a href=''>FAQ</a></li>
+                </ul>
+            </nav>
+            <nav class='footer-legal'>
+                <ul>
+                    <li><a href=''>Перс. данные</a></li>
+                    <li><a href=''>Безопасность</a></li>
+                    <li><a href=''>Документы</a></li>
+                    <li><a href=''>Политика отмены</a></li>
+                </ul>
+            </nav>
+            <nav class='footer-utility'>
+                <ul>
+                    <li><a href=''>Поддержка</a></li>
+                    <li><a href=''>Компания</a></li>
+                    <li><a href=''>Вакансии</a></li>
+                    <li><a href=''>Партнерам</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
