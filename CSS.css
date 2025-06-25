@@ -119,9 +119,6 @@ main {
     width: 444px;
     height: 408px;
 }
-.hero {
-
-}
 .hero form {
     grid-column: span 2;
     display: flex;
@@ -332,5 +329,58 @@ main {
     text-align: center;
     color: #FFFFFF;
 }
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1000px;
+    width: 100%;
+}
+.faq h1 {
+    padding-right: 24px;
+    padding-left: 24px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #F5FA93;
+
+}
+.faq .faq-container {
+    border: 1px solid #333333;
+    border-radius: 32px;
+    border-width: 1px;
+    padding: 24px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+.faq .faq-container .faq-question {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+.faq .faq-container .faq-answer {
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.8s ease, opacity 0.8s ease, padding 0.8s ease;
+}
+.faq .faq-container .faq-answer p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    color: #76757B;
+}
+.faq .faq-container .faq-open:checked ~ .faq-answer {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 32px;
+}
+
+
 
 
