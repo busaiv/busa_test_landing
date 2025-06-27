@@ -39,6 +39,14 @@ main {
     flex-direction: column;
     gap: 80px;
 }
+footer {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 24px;
+    max-width: 1000px;
+    width: 100%
+}
 .container {
     display: grid;
     max-width: 1440px;
@@ -66,9 +74,6 @@ main {
     line-height: 24px;
     letter-spacing: 0;
     color: #000000;
-}
-.header-nav {
-
 }
 .header-nav ul {
     width: max-content;
@@ -380,7 +385,53 @@ main {
     opacity: 1;
     padding-top: 32px;
 }
-
-
-
-
+.footer-media {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 232px;
+    width: 100%;
+}
+.footer-media .footer-logo {
+    padding: 4px 8px 4px 8px;
+    gap: 4px;
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-start;
+}
+.footer-media .footer-logo .logo-text {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+.footer-media .footer-socials {
+    display: flex;
+    gap: 20px;
+}
+.footer-text {
+    max-width: 232px;
+    width: 100%;
+}
+.footer-text ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.feedback-form {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    gap: 10px;
+    border-radius: 99px;
+    border-width: 1px;
+    padding: 16px;
+    background: #F5FA93;
+    border: 1px solid #333333;
+    justify-self: end;
+    bottom: 64px;
+}
