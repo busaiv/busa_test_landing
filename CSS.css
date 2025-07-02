@@ -391,7 +391,7 @@ footer {
     transform: rotate(90deg);
 }
 .faq-open:checked + .faq-question .open-icon:after {
-    transform: rotate(180deg);
+    transform: rotate(90deg) scale(0);
 }
 .faq .faq-container .faq-answer {
     max-height: 0px;
@@ -516,10 +516,65 @@ footer {
         left: 4px;
         border: 1px solid #FFFFFF;
         border-radius: 2px;
-        transition: transform 0.5s ease;
     }
     .logo-nav .toggle-menu-container .menu-icon .icon:before {
         top: 8px;
+    }
+    @keyframes beforeAnim {
+        0% {
+            transform: translateY(0) scale(1);
+        }
+        50% {
+            transform: translateY(3px) scale(0.2);
+        }
+        100% {
+            transform: translateY(3px) rotate(-45deg) scale(1);
+        }
+    }
+    @keyframes afterAnim {
+        0% {
+            transform: translateY(0) scale(1);
+        }
+        50% {
+            transform: translateY(-3px) scale(0.2);
+        }
+        100% {
+            transform: translateY(-3px) rotate(45deg) scale(1);
+        }
+    }
+    @keyframes beforeAnimNot {
+        0% {
+            transform: translateY(3px) rotate(-45deg) scale(1);
+        }
+        50% {
+            transform: translateY(3px) scale(0.2);
+        }
+        100% {
+            transform: translateY(0) scale(1);
+        }
+    }
+    @keyframes afterAnimNot {
+        0% {
+            transform: translateY(-3px) rotate(45deg) scale(1);
+        }
+        50% {
+            transform: translateY(-3px) scale(0.2);
+        }
+        100% {
+            transform: translateY(0) scale(1);
+        }
+    }
+    .nav-open:checked + .menu-icon .icon:before {
+        animation: beforeAnim 0.5s forwards ease;
+    }
+    .nav-open:not(:checked) + .menu-icon .icon:before {
+        animation: beforeAnimNot 0.5s forwards ease;
+    }
+    .nav-open:checked + .menu-icon .icon:after {
+        animation: afterAnim 0.5s forwards ease;
+    }
+    .nav-open:not(:checked) + .menu-icon .icon:after {
+        animation: afterAnimNot 0.5s forwards ease;
     }
     .logo-nav .toggle-menu-container .toggle-header-nav {
         display: none; /*temp*/
